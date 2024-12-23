@@ -1,0 +1,489 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>  𝕊 ℙ 𝔸 ℝ 𝕂 𝕀 𝔽 𝕐  </title>
+    <link rel="icon" href="https://res.cloudinary.com/dutmq6rr3/image/upload/v1697610198/Project/Logo_1_u5n1gr.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+        *{
+        margin:0%;
+        padding:0%;
+        }
+
+        body, html {
+            font-family: 'Roboto Slab', serif;
+            width: 100%;
+            height: 100%;
+        
+        }
+
+        body {
+            background-color: #000;
+            display: flex;
+            display: -webkit-flex;
+            -webkit-justify-content: center;
+            -webkit-align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-justify-content: center;
+        }
+
+        .card--1 .card_img, .card--1  {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609850/Project/space1_oafdaz.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card--2 .card_img, .card--2 {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609852/Project/space2_guccml.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--3 .card_img, .card--3  {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609855/Project/space3_umiycq.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--4 .card_img, .card--4 {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609851/Project/space4_ldiwos.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--5 .card_img, .card--5  {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609852/Project/space5_hwnkub.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card--6 .card_img, .card--6 {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609856/Project/space6_a2vcan.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--7 .card_img, .card--7  {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609855/Project/space7_rnsd5d.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--8 .card_img, .card--8 
+        {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609856/Project/space8_lbhqto.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--9 .card_img, .card--9  {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609854/Project/space9_qjydu0.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card--10 .card_img, .card--10 {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609863/Project/space10_pcfrvo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--11 .card_img, .card--11 {
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609859/Project/space11_gvgoms.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card--12 .card_img, .card--12{
+            background-image: url('https://res.cloudinary.com/dutmq6rr3/image/upload/v1697609857/Project/space12_wdbnz4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .card__like {
+            width: 18px;
+        }
+
+        .card__img {
+            visibility: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 235px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        
+        }
+
+        .card__info-hover {
+            position: absolute;
+            padding: 16px;
+            width: 100%;
+            opacity: 0;
+            top: 0;
+        }
+
+        .card__img--hover {
+            transition: 0.2s all ease-out;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            position: absolute;
+            height: 235px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            top: 0;
+        
+        }
+        .card {
+            margin-right: 25px;
+            transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+            background-color: #fff;
+            width: 33.3%;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+        }
+        .card:hover {
+            box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+            transform: scale(1.10, 1.10);
+        }
+
+        .card__info {
+            z-index: 2;
+            background-color: #fff;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            padding: 16px 24px 24px 24px;
+        }
+
+        .card__category {
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: #868686;
+        }
+
+        .card__title {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .card__by {
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        .card__author {
+            font-weight: 600;
+            text-decoration: none;
+            color: #AD7D52;
+        }
+
+        .card:hover .card__img--hover {
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        .card:hover .card__info {
+            background-color: transparent;
+            position: relative;
+        }
+
+        .card:hover .card__info-hover {
+            opacity: 1;
+        }
+        *
+        {
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+        }
+        .banner
+        {
+            width:100%;
+            height:100vh;
+            background-position:center;
+            box-sizing: border-box;
+            position: relative;
+        }
+        body::-webkit-scrollbar {
+            overflow-y: scroll;
+            display: none;
+            overflow-x: hidden;
+        }
+        .logo1
+        {
+            width:80px;
+            cursor:pointer;
+        }
+        .logo2
+        {
+            width:30px;
+            cursor:pointer;
+            border-radius: 10rem;
+        }
+        .navbar
+        {
+            width:80%;
+            margin:auto;
+            padding:30px 0;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .navbar a button
+        {
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .navbar ul li
+        {
+            list-style:none;
+            display:inline-block;
+            margin:0 20px;
+            position:relative;
+            box-sizing:border-box;
+            width:15em;height:3em;
+            font-size:20px;
+            border-radius:0.5em;margin:0.5em;
+            box-shadow:0 0 5px cyan,
+            0 0 25px cyan
+            color:white;
+            font-family:sans-serif;
+            text-transform:captialize;
+            line-height:3em;
+            transition:0.3s;
+            cursor:pointer;
+
+        }
+        .navbar ul li a
+        {
+            text-decoration:none;
+            color:#000;
+            text-transform:uppercase;
+            box-shadow:0 0 0 white,
+            0 0 0px white
+        }	
+        .navbar ul li button a
+        {
+            border-radius: .5rem;
+            border: none;
+            padding: 1rem 2rem;
+            background-color: white;
+            box-shadow:0 0 5px white,
+            0 0 0px white
+        }
+        .navbar ul li button a:hover
+        {
+            box-shadow:0 0 5px cyan,
+            0 0 25px cyan,0 0 50px cyan,
+            0 0 100px cyan, 0 0 200px cyan;
+        }
+        .navbar ul li button a::after
+        {
+            content:'';
+            height:3px;
+            width:0%;
+            background:#345677;
+            position:absolute;
+            left:0;
+            bottom:-5px;
+            transition:0.5s;
+        }	
+        .card__info button
+        {
+            border-color: transparent;
+            background-color: transparent
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="https://res.cloudinary.com/dutmq6rr3/image/upload/v1697610198/Project/Logo_1_u5n1gr.jpg" class="logo1">
+            <ul>
+                <li><button><a href="/">Home</a></button></li>
+                <li><button><a href="/collections">Collections</a></button></li>
+                <li><button><a href="/aboutus">About Us</a></button></li>
+            </ul>
+        </div>
+        <section class="cards">
+            <article class="card card--1">
+                <div class="card__info-hover">
+                    
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#GALAXY</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--2">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#COSMOS</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--3">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#STARS</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--4">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#NEUTRINO</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+    </section><br><br>
+        <section class="cards">
+            <article class="card card--5">
+                <div class="card__info-hover">
+                    
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#EARTH</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>
+        <article class="card card--6">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#MILKYWAY GALAXY</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--7">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#NEBULA</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--8">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#COMETS</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+    </section>
+    </section><br><br>
+        <section class="cards">
+            <article class="card card--9">
+                <div class="card__info-hover">
+                    
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#ORION</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>
+        <article class="card card--10">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#ROCKET</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--11">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#TYPHOON</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+        <article class="card card--12">
+            <div class="card__info-hover">
+                
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <h3 class="card__title">#SATELLITE</h3>
+                <span class="card_by"> <a href="/index" class="card_author" title="author"><button><i class="fa fa-heart" style="font-size:24px;color:red"></i></button></a></span>
+            </div>
+        </article>  
+    </section> 
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>  𝕊 ℙ 𝔸 ℝ 𝕂 𝕀 𝔽 𝕐  </title>
+    <link rel="icon" href="https://res.cloudinary.com/dutmq6rr3/image/upload/v1697610198/Project/Logo_1_u5n1gr.jpg">
+    <style>
+        body {
+            background-color: #f2f2f2; /* Pleasant background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333; /* Header background color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        input[type=submit]
+        {
+            width: 200%;
+            margin-left: -20px;
+            margin-top: -20px;
+            margin-bottom: -20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Save Your Memories</h1>
+    </header>
+    <div class="container">
+        <form action="/submit" method="POST">
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            <tr align="left">
+                <td><label for="name">Collection Name:</label></td>
+                <td><input type="text" id="collectionname" name="collectionname" placeholder="Enter Collection Name" required></td>
+             </tr>
+             <tr align="left">
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter the Image name" required></td>
+             </tr>
+             <tr align="left">
+                <td><label for="name">Memory Name:</label></td>
+                <td><input type="text" id="memoryname" name="memoryname" placeholder="Give a Memory Name" required></td>
+             </tr>
+             <tr align="left">
+                <td><label for="date">Date:</label></td>
+                <td><input type="date" id="date" name="date" placeholder="Memory Saved Date" required></td>
+             </tr>
+             <tr align="left">
+                <td><label for="time">Time:</label></td>
+                <td><input type="time" id="time" name="time" placeholder="Memory Saved Time" required></td>
+             </tr>
+             <tr align="left">
+                <td><label for="description">Desription of the Memory:</label></td>
+                <td><textarea rows="5" cols="25" id="description" name="description" placeholder="Discription of your Memory" required></textarea></td>
+             </tr>
+        </table><br><br>
+        <center><button><input type="submit" value="Store"></button></center>
+        </form>
+    </div>
+</body>
+</html>
